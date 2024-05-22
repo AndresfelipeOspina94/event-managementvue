@@ -4,7 +4,18 @@ import { createRouter, createWebHistory } from 'vue-router';
 import EventList from '@/components/EventList.vue';
 import NewEvento from '@/components/NewEvento.vue';
 import Eventos from '@/views/Eventos.vue';
-import EditarEvento from '@/components/EditarEvento.vue'; 
+import EditarEvento from '@/components/EditarEvento.vue';'@/components/Ponentes.vue';
+import NewPonente from '@/components/NewPonente.vue';
+import EditarPonente from '@/components/EditarPonente.vue';
+import Asistentes from '@/components/Asistentes.vue';
+import NewAsistente from '@/components/NewAsistente.vue';
+import EditarAsistente from '@/components/EditarAsistente.vue';
+import Sesiones from '@/components/Sesiones.vue';
+import NewSesion from '@/components/NewSesion.vue';
+import EditarSesion from '@/components/EditarSesion.vue';
+import Inscripciones from '@/components/Inscripciones.vue';
+import NewInscripcion from '@/components/NewInscripcion.vue';
+import EditInscripcion from '@/components/EditInscripcion.vue';
 
 const routes = [
   {
@@ -13,24 +24,74 @@ const routes = [
     component: EventList
   },
   {
-    path: '/create-event',
-    name: 'NewEvento',
-    component: NewEvento
+    path: '/eventos/nuevo',
+    name: 'NewEvent',
+    component: NewEvent
   },
   {
-    path: '/eventos',
-    name: 'Eventos',
-    component: Eventos
+    path: '/eventos/editar/:id',
+    name: 'EditEvent',
+    component: EditEvent
   },
   {
-    path: '/editar-evento/:id',
-    name: 'EditarEvento',
-    component: EditarEvento
+    path: '/ponentes',
+    name: 'Ponentes',
+    component: Ponentes
   },
   {
-    path: '/nuevo-evento',
-    name: 'NuevoEvento',
-    component: NewEvento
+    path: '/ponentes/nuevo',
+    name: 'NewPonente',
+    component: NewPonente
+  },
+  {
+    path: '/ponentes/editar/:id',
+    name: 'EditarPonente',
+    component: EditarPonente
+  },
+  {
+    path: '/asistentes',
+    name: 'Asistentes',
+    component: Asistentes
+  },
+  {
+    path: '/asistentes/nuevo',
+    name: 'NewAsistente',
+    component: NewAsistente
+  },
+  {
+    path: '/asistentes/editar/:id',
+    name: 'EditarAsistente',
+    component: EditarAsistente
+  },
+  {
+    path: '/sesiones',
+    name: 'Sesiones',
+    component: Sesiones
+  },
+  {
+    path: '/sesiones/nuevo',
+    name: 'NewSesion',
+    component: NewSesion
+  },
+  {
+    path: '/sesiones/editar/:id',
+    name: 'EditarSesion',
+    component: EditarSesion
+  },
+  {
+    path: '/inscripciones',
+    name: 'Inscripciones',
+    component: Inscripciones
+  },
+  {
+    path: '/inscripciones/nuevo',
+    name: 'NewInscripcion',
+    component: NewInscripcion
+  },
+  {
+    path: '/inscripciones/editar/:id',
+    name: 'EditInscripcion',
+    component: EditInscripcion
   }
 ];
 
