@@ -100,7 +100,7 @@ export default {
           title: 'El evento ha sido actualizado',
           showConfirmButton: true,
           timer: 2000,
-          position: 'center' // Asegurarse de que la posición sea 'center'
+          position: 'center' 
         });
       }
     }
